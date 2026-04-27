@@ -1,0 +1,65 @@
+{
+  "baseline_h5": {
+    "size_kb": 136.64,
+    "accuracy": 0.9797000288963318
+  },
+  "primary_variant": "int8",
+  "variants": [
+    {
+      "accuracy": 0.9797,
+      "size_kb": 30.5,
+      "input_dtype": "float32",
+      "output_dtype": "float32",
+      "latency_ms": {
+        "samples": 500,
+        "mean": 0.038552982006876846,
+        "p50": 0.03312399996957538,
+        "p95": 0.05458159987483666
+      },
+      "variant": "fp32",
+      "path": "artifacts/tflite/fp32.tflite"
+    },
+    {
+      "accuracy": 0.98,
+      "size_kb": 14.27,
+      "input_dtype": "float32",
+      "output_dtype": "float32",
+      "latency_ms": {
+        "samples": 500,
+        "mean": 0.02961718999722507,
+        "p50": 0.026199999979326094,
+        "p95": 0.04097904983382248
+      },
+      "variant": "dynamic",
+      "path": "artifacts/tflite/dynamic.tflite"
+    },
+    {
+      "accuracy": 0.9797,
+      "size_kb": 20.45,
+      "input_dtype": "float32",
+      "output_dtype": "float32",
+      "latency_ms": {
+        "samples": 500,
+        "mean": 0.041895209998529026,
+        "p50": 0.03420250004637637,
+        "p95": 0.07934170002954462
+      },
+      "variant": "float16",
+      "path": "artifacts/tflite/float16.tflite"
+    },
+    {
+      "accuracy": 0.9749,
+      "size_kb": 14.56,
+      "input_dtype": "int8",
+      "output_dtype": "int8",
+      "latency_ms": {
+        "samples": 500,
+        "mean": 0.039792176002720225,
+        "p50": 0.03347700010181143,
+        "p95": 0.05719984993675098
+      },
+      "variant": "int8",
+      "path": "artifacts/tflite/int8.tflite"
+    }
+  ]
+}
